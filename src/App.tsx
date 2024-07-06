@@ -3,6 +3,7 @@ import Form from "./components/Form"
 import ActivityList from "./components/ActivityList"
 import CalorieTracker from "./components/CalorieTracker"
 import { useActivity } from "./hooks/useActivity"
+import { Activity } from "./types"
 
 function App() {
 
@@ -44,10 +45,7 @@ function App() {
         </div>
       </section>
       <section className="p-10 mx-auto max-w-4xl">
-        <ActivityList
-          activities={state.activities}
-          dispatch={dispatch}
-        />
+        <ActivityList />
       </section>
     </>
   )
